@@ -1,16 +1,30 @@
-# drive_demo
+# Drive Demo
 
-A new Flutter project.
+## Information
+This demo application simplifies the integration of Google Drive into Flutter apps, allowing users to seamlessly access their files and folders without leaving the app.
 
-## Getting Started
+This demo application provides integration of Google Drive functionality into a Flutter app. This demo application allows users to sign in to their Google accounts, view their Google Drive content within the app, and download and import the selected files.
 
-This project is a starting point for a Flutter application.
+## Features
+- Browsing User Google Drive Files
+- Searching User Google Drive Files
+- Downloading User Google Drive Files
+- Adaptive user interface for Android and iOS
 
-A few resources to get you started if this is your first Flutter project:
+## Important
+If you see an error in ```home_screen.dart``` file (lines no. 13 and 72) do the following:\
+Open: ```/Users/<Your-Name>/.pub-cache/hosted/pub.dev/googledrivehandler-1.0.5/lib/googledrivehandler.dart```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Replace:
+```
+export 'src/googledrivehandler_functions.dart';
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+With
+```
+export 'src/googledrivehandler_functions.dart';
+export 'src/googledrivehandler_screen.dart';
+```
+
+## Preview
+![alt text](https://i.postimg.cc/90cxRxcT/imgonline-com-ua-twotoone-o5-JQFe-Fe-Doftrd-I.png "img")
